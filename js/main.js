@@ -102,3 +102,9 @@ $(function () {
 
 	$("body").addClass("styled");
 });
+
+if(typeof console !== "undefined" && typeof console.log !== "undefined"){
+		var loon = '   _""\n__\'o \\\\\\\n  `) )\n  (  )--..,___\n   \\  (_      \\\\\n    \\   """". / \\\n~~~~~~~~~~~~~~~~~~~~~~~~';
+		console.log(loon);
+		console.log("Hey there! Thanks for checking out my site! You rock!");
+}
