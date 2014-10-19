@@ -1,0 +1,9 @@
+# ----------------------------------------------------------------------
+# Expires headers (for better cache control)
+# ----------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType application/javascript    "access plus 1 year"
+
+</IfModule>
