@@ -25,35 +25,148 @@
 
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="/css/normalize.min.css">
+		<link rel="stylesheet" href="/css/main.css">
 		<style>
-			
+			html, body {
+				height: 100%;
+			}
+			#newsletter {
+					/*background: #99c200;*/
+					height: 100%;
+			}
+
+				#newsletter a {
+					padding: 0 .25%;
+					background-color: #39B7EA;
+
+					-o-transition: color .15s linear;
+					-moz-transition: color .15s linear;
+					-webkit-transition: color .15s linear;
+					transition: color .15s linear;
+				}
+
+				#newsletter a:hover {
+					color: #fff;
+
+				}
+				#newsletter article {
+						max-width: 600px;
+				}
+
+			#newsletter .sendgrid-subscription-widget {
+				margin-top: 30px;
+			}
+
+			#newsletter .sendgrid-subscription-widget label {
+				font-weight: bold;
+			}
+
+			#newsletter .sendgrid-subscription-widget input {
+				margin: 10px 0;
+				border-radius: 0;
+			}
+
+			#newsletter .sendgrid-subscription-widget input[name=email] {
+				max-width: 420px;
+				width: 100%;
+				padding: 10px 0;
+				border: 0;
+				border-bottom: 1px solid #333;
+			}
+
+			#newsletter .sendgrid-subscription-widget input[type=submit] {
+				background: #39B7EA;
+				border: 0;
+				font-weight: bold;
+				padding: 10px;
+				color: #FFF;
+			}
+
+			#newsletter .sendgrid-subscription-widget div.response {
+				margin-top: 20px;
+				font-weight: bold;
+			}
+
+			#newsletter .sendgrid-subscription-widget div.response.success {
+				color: #333;
+			}
+
+			#newsletter .sendgrid-subscription-widget div.response.error {
+				color: #8b0000;
+				font-size: 15px;
+			}
+
+			#newsletter .sendgrid-subscription-widget div.response.error:before {
+				content: "!";
+				margin-right: 10px;
+				color: #FFF;
+				background: darkred;
+				display: inline-block;
+				border-radius: 20px;
+				line-height: 20px;
+				height: 20px;
+				width: 20px;
+				font-size: 16px;
+				text-align: center;
+			}
+
+			@media (min-width: 600px) {
+				#newsletter .sendgrid-subscription-widget input {
+					margin: 0;
+					margin-left: 10px;
+				}
+			}
+
 		</style>
 
-		<script src="js/vendor/modernizr-2.6.1.min.js"></script>
-		<script src="js/vendor/respond-1.1.0.min.js"></script>
+		<script src="/js/vendor/modernizr-2.6.1.min.js"></script>
+		<script src="/js/vendor/respond-1.1.0.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 		<![endif]-->
-		<section id="about" class="big-panel">
+		<section id="newsletter" class="big-panel">
 			<h1>Newsletter</h1>
 			<article>
-				<p>I'm <span itemprop="name">Nicholas Quinlan</span> or Nick for short. I live in Berkeley, CA and work at <a href="http://sendgrid.com" itemprop>SendGrid</a> as a <span itemprop="jobTitle">Developer Evangelist</span>.</p>
-				<p>I've been using (or more like been glued to) computers since the age of three, just ask my parents. At age five, I think that I might have had one of the most well planned and marketed lemonade stands a five year old has ever had.</p>
-				<p>From the day of my first lemonade stand my interest in business started. Even though when asked what I was going to be, I would say "a policeman," "a computer guy," or "Batman" the one unchangeable theme was "When I Own A Business". Now I know that there is a word for that: entrepreneur.</p>
-				<img style="display: block; margin: 20px auto;" src="img/lemonade.jpg" alt="Nicholas Quinlan's Lemonade Stand" />
-				<p>By age eleven I created my first 'business', Nicholas Quinlan Computer Consulting. At age thirteen I helped my computer instructor teach Adams State College Students, who in elementary and middle school had actually been <em>my</em> teachers! At age fifteen I became seriously interested in photography. By seventeen I had designed my fair share of websites and before I was even 18 I had started my first trade named company: Vyactiva Photographic.</p>
+				<p>Hi, I&#8217;m Nick. I&#8217;m in the process of creating something of an email list. I&#8217;m trying to make it different than your typical email-distro or newsletter. </p>
+
+				<p>I want to make something that allows me to chat openly with those around me and inspires one-on-one discussion between myself and whomever cares.</p>
+
+				<p>The emails I send won&#8217;t come with a regular cadence (as far as I know, <em>keep in mind, I&#8217;m still feeling this out</em>). In it, will undoubtedly be my travel schedule, some things I&#8217;m thinking about, some gifs, and usually a longer piece: the purpose of the email.</p>
+
+				<p>I&#8217;m going to try as hard as possible to make this more than just another email in your inbox, I want this to be a way for us to communicate.</p>
+
+				<p>If this sounds like something interesting to you, please check it out, signup below, and let me know what you think.</p>
+
+				<div>
+					<div class="sendgrid-subscription-widget" data-token="LE4%2B7rBwLY9nxSQFULZ%2F37qWwRvHo%2FttBmVf8ChNJq1WLyIdG9Fm8FPdLZ3HGIMjaSQ9mrSjReltEVDPlL9OqA%3D%3D"></div>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://s3.amazonaws.com/subscription-cdn/0.1/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'sendgrid-subscription-widget-js');</script>
+				</div>
 			</article>
 		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 
-		<script src="js/vendor/jquery.hashchange-1.3.min.js"></script>
-		<script src="js/vendor/jquery.fittext-1.1.NQ.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="/js/vendor/jquery.fittext-1.1.NQ.min.js"></script>
+
+		<script>
+
+			document.getElementsByClassName("sendgrid-subscription-widget")[0].addEventListener("ready", function (e) {
+			  $(".sendgrid-subscription-widget .response").hide();
+			  $('<div class="response"></div>').appendTo(".sendgrid-subscription-widget");
+			});
+
+			$(function () {
+				$("h1").fitText(.55,{ maxFontSize: '96px' });
+
+				$(".sendgrid-subscription-widget").on("success", function () {
+					_gaq.push(['_trackEvent', 'Form', 'Submit', 'Newsletter Subscription']);
+				});
+			});
+
+		</script>
 
 		<script>
 			var _gaq=[['_setAccount','UA-24562284-1'],['_trackPageview']];
@@ -61,6 +174,5 @@
 			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script>
-		<script src="js/track.js"></script>
 	</body>
 </html>
