@@ -207,11 +207,11 @@ textarea {
 		max-width: 600px;
 	}
 
-	#projects {
+	#work {
 		background: #99c200;
 	}
 
-	#projects a {
+	#work a {
 		padding: 0 .25%;
 		background-color: #39B7EA;
 
@@ -221,44 +221,44 @@ textarea {
 		transition: color .15s linear;
 	}
 
-	#projects a:hover {
+	#work a:hover {
 		color: #fff;
 
 	}
 
-	#projects > ul {
+	#work > ul {
 		list-style: none;
 		padding: 0;
 	}
-	#projects > ul > li {
+	#work > ul > li {
 		margin: 5% 0;
 		max-width: 600px;
 	}
-	#projects > ul > li .date {
+	#work > ul > li .date {
 		margin-left: 5%;
 		font-style: italic;
 	}
-	#projects > ul > li p {
+	#work > ul > li p {
 		margin-left: 5%;
 	}
-	#projects > ul > li h2 ~ p {
+	#work > ul > li h2 ~ p {
 		margin-top: 0;
 	}
 
-	#projects h2 {
+	#work h2 {
 		font-weight: 600;
 		font-size: 20px;
 		margin: 0;
 	}
-	#projects h2 a {
+	#work h2 a {
 		padding: 0 .25%;
 		color: #000;
 		background-color: transparent;
 	}
-	#projects h2 a:hover, #projects h2 a:active {
+	#work h2 a:hover, #work h2 a:active {
 		background-color: #39B7EA;
 	}
-	#projects h2:after {
+	#work h2:after {
 		content: "";
 	}
 
@@ -301,11 +301,11 @@ textarea {
 	header ~ div.panel {
 		padding: 1% 0 0 0;
 	}
-	#projects > ul > li {
+	#work > ul > li {
 		margin-left: 150px;
 		position: relative;
 	}
-	#projects > ul > li .date {
+	#work > ul > li .date {
 		position: absolute;
 		top: 5px;
 		left: -150px;
@@ -313,7 +313,7 @@ textarea {
 		text-align: right;
 		margin-left: 0;
 	}
-	#projects > ul > li p {
+	#work > ul > li p {
 		margin-left: 0;
 	}
 }
