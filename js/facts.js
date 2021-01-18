@@ -3,7 +3,7 @@ var facts = [
 	'If I could I would only eat avocados for the rest of my life.',
 	'I read trivia books for fun.',
 	'<a href="http://www.amazon.com/Quickword-Ultimate-Green-Spinner-Scorecard/dp/0880795107/" target="_blank">Quickword</a> is my favorite board game.',
-	'Calculus is my favorite branch of mathmatics.',
+	'Calculus is my favorite branch of mathematics.',
 	'Logic puzzles were my favorite part of fourth grade.',
 	'<a href="http://www.protrails.com/trails/view/16/boulder_denver_golden_fort_collins_lyons/green_mountain_summit_via_the_ranger_trail" target="_blank">Green Mountain</a> is my favorite short hike.',
 	'Caffeine makes up more of my blood stream than blood.',
