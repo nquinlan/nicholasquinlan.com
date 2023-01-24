@@ -9,7 +9,7 @@ var facts = [
 	'Caffeine makes up more of my blood stream than blood.',
 	'I think <a href="http://www.bobsredmill.com/steel-cut-oats.html" target="_blank">Bob&rsquo;s Red Mill Steel Cut Oats</a> are the Bomb.com.',
 	'NPR is my favorite radio station.',
-	'<a href="http://www.maththeband.com/" target="_blank">Math The Band</a> was the first band I saw in concert.',
+	'<a href="https://en.wikipedia.org/wiki/Math_the_Band" target="_blank">Math The Band</a> was the first band I saw in concert.',
 	'U+1F603 is my favorite unicode character.',
 	'If you refresh this page enough times, you can answer all my security questions.'
 	/* "You're a cheater if you're reading this." */
