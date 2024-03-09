@@ -1,10 +1,3 @@
-function fitHeader() {
-	if($("header h1").offset().left/document.width > .20){
-		$("header h1").css("padding",0).css("padding-top", ($("#logo").height()*1.05 + $("#logo").offset().top - $("header h1").height()) );
-	}else{
-		$("header h1").css("padding","");
-	}
-}
 function windowSizers () {
 	$("section").each(function (index) {
 		$(this).css({
@@ -27,9 +20,7 @@ function windowSizers () {
 }
 section = [];
 $(function () {
-	$("header h1").fitText(.55,{},fitHeader);
 	$("#random-fact").html( facts[Math.floor(Math.random()*facts.length)] );
-	$(":not(header) > h1").fitText(.50, {"maxFontSize" : 96});
 	windowSizers();
 	$(window).on("resize", function () { windowSizers(); });
 	window.setTimeout(fitHeader, 100);

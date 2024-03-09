@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-	color: #222;
+	color: #333;
 }
 
 body {
@@ -101,7 +101,7 @@ textarea {
 	}
 
 	a {
-		color: #000;
+		color: #333;
 		text-decoration: none;
 		background-color: #99c200;
 		padding: 0 1%;
@@ -137,7 +137,7 @@ textarea {
 		font-size: 150px;
 		font-weight: 200;
 		line-height: 1;
-		padding: 20px 0 20%;
+		padding: 20px 0 10%;
 	}
 
 	h2 {
@@ -162,7 +162,7 @@ textarea {
 	}
 
 	section h1 {
-		font-size: 96px;
+		font-size: 72px;
 	}
 
 	#primary a {
@@ -171,10 +171,11 @@ textarea {
 
 	.big-panel {
 		padding: 20px;
+		border-top: transparent 2vh solid;
 	}
 
 	.no-js .big-panel {
-		margin: 10% 0 0;
+		margin: 5% 0 0;
 	}
 
 	.no-js .big-panel + .big-panel {
@@ -186,16 +187,16 @@ textarea {
 	}
 
 	.big-panel h1 {
-		margin: .2em 0;
+		margin: 0 0 .2em 0;
 	}
 
 	#about {
-		background: #39B7EA;
+		border-top-color: #39B7EA;
 	}
 
 	#about a {
 		padding: 0 .25%;
-		background-color: #99c200;
+		background-color: #39B7EA;
 
 		-o-transition: color .15s linear;
 		-moz-transition: color .15s linear;
@@ -208,12 +209,12 @@ textarea {
 	}
 
 	#work {
-		background: #99c200;
+		border-top-color: #99c200;
 	}
 
 	#work a {
 		padding: 0 .25%;
-		background-color: #39B7EA;
+		background-color: #99c200;
 
 		-o-transition: color .15s linear;
 		-moz-transition: color .15s linear;
@@ -231,7 +232,7 @@ textarea {
 		padding: 0;
 	}
 	#work > ul > li {
-		margin: 5% 0;
+		margin: 2.5% 0;
 		max-width: 600px;
 	}
 	#work > ul > li .date {
@@ -252,7 +253,7 @@ textarea {
 	}
 	#work h2 a {
 		padding: 0 .25%;
-		color: #000;
+		color: #333;
 		background-color: transparent;
 	}
 	#work h2 a:hover, #work h2 a:active {
@@ -298,6 +299,9 @@ textarea {
 	div.panel {
 		margin-bottom: 2%;
 	}
+	header h1 {
+		padding-top: 155px;
+	}
 	header ~ div.panel {
 		padding: 1% 0 0 0;
 	}
@@ -307,10 +311,11 @@ textarea {
 	}
 	#work > ul > li .date {
 		position: absolute;
-		top: 5px;
+		top: 8px;
 		left: -150px;
 		width: 120px;
 		text-align: right;
+		font-size: 12px;
 		margin-left: 0;
 	}
 	#work > ul > li p {
@@ -318,9 +323,11 @@ textarea {
 	}
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	   only screen and (min-resolution: 144dpi) {
-
+@media only screen and (min-width: 1200px) {
+	#work > ul {
+		max-width: 48%;
+		float: left;
+	}
 }
 
 /* ==========================================================================
