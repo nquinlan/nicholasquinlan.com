@@ -17,13 +17,13 @@ function windowSizers () {
 		}
 	});
 	$("#px-down").text(Math.round($("#about").offset().top - $("#px-down").offset().top));
+	$("section h1").fitText(1.2, { maxFontSize: '72px' });
 }
 section = [];
 $(function () {
 	$("#random-fact").html( facts[Math.floor(Math.random()*facts.length)] );
 	windowSizers();
 	$(window).on("resize", function () { windowSizers(); });
-	window.setTimeout(fitHeader, 100);
 	$("a[href^=#]").anchorjump();
 
 	$(window).scroll(function () {
